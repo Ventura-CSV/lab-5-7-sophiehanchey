@@ -1,24 +1,10 @@
 
+def findmin(numbers):
+	minidx = numbers.index(min(numbers))
+	numbers[0], numbers[minidx] = numbers[minidx], numbers[0]
 
-def printfunction1(*str):
-	print (str)
-	for v in str:
-		print (v, end='')
-	print()
-
-def printfunction2(str):
-	for v in str:
-		print (v, end='')
-	print()
+	
+# Make your code
 
 
-def main():
-	str = 'Python Programming'
-	printfunction1(*str)
-	printfunction2(str)
-
-	morestr = 'C++ Programming'
-	printfunction1(str, morestr)
-	# printfunction2(str, morestr)  # Error
-
-main()
+	
