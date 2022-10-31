@@ -7,7 +7,7 @@ def test_main():
 
     others = numbers
     for i in range(len(numbers)-1):
-        findmin(others)
+        main.findmin(others)
         firstval, *others = others
         numbers[i] = firstval
 
