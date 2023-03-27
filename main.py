@@ -1,17 +1,23 @@
 
-def findmin(numbers):
-	minidx = numbers.index(min(numbers))
-	numbers[0], numbers[minidx] = numbers[minidx], numbers[0]
+def splitlist(numbers):
+    minidx = numbers.index(min(numbers))
+    numbers[0], numbers[minidx] = numbers[minidx], numbers[0]
+    first, *others = numbers
+    return first, others
 
-	
 
-numbers = [5, 4, 3, 2, 1]
+def main():
 
-others = numbers
+    numbers = [5, 4, 3, 2, 1]
 
-###########################
-# Make your code
-# Complet this main function
-###########################
+    first, others = splitlist(numbers)
+    ###########################
+    # Make your code
+    # Complet this main function
+    ###########################
+    print(first)  # Expected output
+    print(others)  # Expected output     4 3 2 5
 
-print (numbers) # Expected output     1 2 3 4 5
+
+if __name__ == '__main__':
+    main()
