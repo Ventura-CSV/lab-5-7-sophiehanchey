@@ -1,9 +1,8 @@
 
 def splitlist(numbers):
-    minidx = numbers.index(min(numbers))
-    numbers[0], numbers[minidx] = numbers[minidx], numbers[0]
-    first, *others = numbers
-    return first, others
+   # ********************
+   # Code your program
+   # ********************
 
 
 def main():
