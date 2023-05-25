@@ -1,8 +1,10 @@
 
 def splitlist(numbers):
-   # ********************
-   # Code your program
-   # ********************
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
 
 
 def main():
@@ -10,11 +12,7 @@ def main():
     numbers = [5, 4, 3, 2, 1]
 
     first, others = splitlist(numbers)
-    ###########################
-    # Make your code
-    # Complet this main function
-    ###########################
-    print(first)  # Expected output
+    print(first)  # Expected output     1
     print(others)  # Expected output     4 3 2 5
 
 
