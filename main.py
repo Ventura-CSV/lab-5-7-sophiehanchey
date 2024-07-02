@@ -1,8 +1,6 @@
 
 def splitlist(numbers):
-    # split the numbers up using * and check the output
-    print(f'The numbers: {numbers}')
-    
+    # print(f'The numbers: {numbers}')
     # find the minimum and idx of minimum
     min = None
     minIdx = None
@@ -20,7 +18,6 @@ def splitlist(numbers):
     # remove the minimum value
     numbers.remove(min)
     
-    
     return min, numbers
 
 def main():
@@ -29,7 +26,7 @@ def main():
 
     first, others = splitlist(numbers)
     print(first)  # Expected output     1
-    print(others)  # Expected output     4 3 2 5
+    print(*others)  # Expected output     4 3 2 5
 
 
 if __name__ == '__main__':
