@@ -13,8 +13,11 @@ def splitlist(numbers):
             minIdx = currentIdx
         currentIdx += 1
         
-    # swap with first item values
+    # move first item to where minIdx is located
+    numbers.insert(minIdx, numbers[0])
     
+    # remove the minimum value
+    numbers.remove(min)
     
     return min, numbers
 
