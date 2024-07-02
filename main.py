@@ -1,5 +1,5 @@
 
-def splitlist(*numbers):
+def splitlist(numbers):
     # split the numbers up using * and check the output
     print(f'The numbers: {numbers}')
     
@@ -14,10 +14,9 @@ def splitlist(*numbers):
         currentIdx += 1
         
     # swap with first item values
-    numbers[0], numbers[minIdx] = numbers[minIdx], numbers[0]
-    print(numbers)
     
-    return numbers
+    
+    return min, numbers
 
 def main():
 
